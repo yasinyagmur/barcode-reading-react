@@ -56,7 +56,7 @@ function App() {
         .then((res) => res.json())
         .then((data) => {
           if (data) {
-            setBasket([...basket, data]);
+            setBasket([ data]);
           } else {
             alert("Bu ürün bulunamadı!");
           }
